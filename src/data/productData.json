@@ -1,0 +1,21 @@
+{
+    "products" :
+    [{
+        "id": 1,
+        "name": "computer",
+        "price": 2000,
+        "detail": "A computer is an electronic device that processes data and performs tasks according to a set of instructions (called programs). It can store, retrieve, and process information quickly and accurately. Computers are used for a wide range of applications, including communication, entertainment, business, and scientific research."
+    },
+    {
+        "id": 2,
+        "name": "phone",
+        "price": 800,
+        "detail": "A phone is a device used for communication. Modern phones, especially smartphones, allow users to make calls, send messages, take photos, browse the internet, use apps, and more. They combine computing power with connectivity, making them essential tools in daily life."
+    },
+    {
+        "id": 3,
+        "name": "TV",
+        "price": 500,
+        "detail": "A TV (television) is an electronic device used to display video and sound. It allows people to watch shows, movies, news, and other content, often through broadcast signals, cable, or internet streaming. Modern TVs often have smart features for apps, games, and online video services."
+    }]
+}

@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Products from "./pages/Products";
 import NotFoundPage from "./pages/NotFoundPage";
 import Header from "./components/Header";
 import Employees from "./pages/Employees";
@@ -10,6 +11,7 @@ import CompanyAbout from "./pages/CompanyAbout";
 import Managers from "./pages/Managers"
 import TeamLeaders from "./pages/TeamLeaders"
 import Developers from "./pages/Developers"
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
       <div>
         <Header></Header>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />          
           <Route path="/about" element={<About />}>
             <Route path="employees" element={<Employees/>}>
               <Route path="managers" element={<Managers/>}/>
@@ -27,6 +29,8 @@ function App() {
             <Route path="company" element={<CompanyAbout/>}/>
           </Route>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/details/:id" element={<ProductDetails/>} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
