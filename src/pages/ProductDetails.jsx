@@ -1,16 +1,16 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import productData from '../data/productData.json'
-import DetailProduct from '../components/DetailProduct' 
+import React from "react";
+import { useParams } from "react-router-dom";
+import productData from "../data/productData.json";
+import DetailProduct from "../components/DetailProduct";
 
 function ProductDetails() {
-  const params = useParams()
-  const product = productData.products[params.id-1]
+  const { id } = useParams();
+  const product = productData.products[id - 1];
   return (
     <div>
-      <DetailProduct product={product}/>
+      <DetailProduct product={product} />
     </div>
-  )
+  );
 }
 
-export default ProductDetails
+export default ProductDetails;
